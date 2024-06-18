@@ -15,12 +15,12 @@ class Employee(EmployeeBase):
     created_at: datetime
     updated_at: datetime
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True
 
 class EmployeeUpdate(BaseModel):
     email: Optional[str] = Field(None, description="The employee's email")
     name: Optional[str] = Field(None, description="The employee's name")
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True

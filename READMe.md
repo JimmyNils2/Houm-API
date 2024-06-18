@@ -51,3 +51,9 @@ Make sure you have PostgreSQL installed and configured with the following detail
 - **Database**: houm
 - **Password**: postgres
 - **Port**: 5432
+
+
+## Test
+```bash
+pytest
+```

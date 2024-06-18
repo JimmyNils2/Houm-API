@@ -1,7 +1,6 @@
 from sqlalchemy import delete
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from sqlalchemy.orm import selectinload
 
 from db.models.employee import Employee
 from db.models.visit import Visit

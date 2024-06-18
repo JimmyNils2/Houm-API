@@ -19,8 +19,8 @@ class Property(PropertyBase):
     created_at: datetime
     updated_at: datetime
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True
 
 class PropertyUpdate(BaseModel):
     address: Optional[str] = Field(None, description="The property's address")
@@ -28,5 +28,5 @@ class PropertyUpdate(BaseModel):
     price: Optional[Decimal] = Field(None, description="The property's price")
     description: Optional[str] = Field(None, description="The property's description")
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True

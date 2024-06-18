@@ -20,13 +20,13 @@ class Visit(VisitBase):
     employee_id: int
     property_id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True
 
 
 class VisitUpdate(BaseModel):
     visit_date: Optional[datetime]
     comment: Optional[str]
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attibutes = True
