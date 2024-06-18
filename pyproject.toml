@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "houm api"
+version = "0.1.0"
+description = "It's a backend system for a mobile phone app developed by Houm a real estate company. The app enables employees of Houm to register their property visits. Employees can record details of each visit, including the property visited, visit date/time, and any feedback/comments."
+authors = ["Jimmy Gonzalez <jimmynils2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.30.1"
+fastapi = "^0.111.0"
+pydantic = "^2.7.4"
+sqlalchemy = "^2.0.30"
+psycopg2-binary = "^2.9.9"
+sqlalchemy-utils = "^0.41.2"
+alembic = "^1.13.1"
+asyncpg = "^0.29.0"
+poetry-plugin-export = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
